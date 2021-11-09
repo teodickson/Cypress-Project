@@ -40,7 +40,7 @@ describe('Automation Test for Shopee Website', () => {
   
   it('User is able to enter text on search box', function() {
 	  cy.get('.shopee-searchbar-input__input').type('laptop').type('{enter}')
-	  cy.get('.shopee-search-filter-status__text',{timeout:2500}).should('be.visible')
+	  cy.get('.shopee-search-filter-status__text',{timeout:5500}).should('be.visible')
   })
 })
 
